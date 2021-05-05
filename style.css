@@ -4,7 +4,8 @@ margin: 0%
 }
 
 header{
-  color: whitesmoke;
+  color:   white;
+ ;
 background-image: url("https://images.pexels.com/photos/1287142/pexels-photo-1287142.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 height: 80% ;
 }
@@ -69,16 +70,21 @@ color: #32045d;
 #section03{
 color: #32045d;
    background-color: #f5cebe;
-   margin-top:10px; 
+   margin-top:5px; 
    text-align: center;
    font-size: 20px
 }
+section02 script{
+  float: center;
+}
 
 footer{
-  height: 50px;
+  height: 60px;
   color: #32045d;
   background-color: rgba(240, 224, 255, 0.774);
   text-align: center;
   margin-bottom: 10% ;
 }
+
+
 
