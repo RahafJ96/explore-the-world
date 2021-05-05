@@ -2,11 +2,9 @@
 
 var userName ='Rahaf'; 
 
-alert('hello');
+alert('Hello '+ userName);
 
 var favouriteCountry= prompt('what is your favourite Country between Austria, France or Japan?');
-
-// there is a way to change to lower case.
 
 
 if(favouriteCountry=='Austria'){
@@ -18,3 +16,5 @@ if(favouriteCountry=='Austria'){
 else{
   document.write('<h3> please only write Austria, France or Japan next time</h3>');
 }
+
+var reasonTravel= confirm('Enjoy!')
