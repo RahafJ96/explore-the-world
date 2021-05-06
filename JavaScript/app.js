@@ -7,7 +7,6 @@
 5. show number of starts based on user input.
 */
 
-<<<<<<< HEAD
 alert('Hello there! Welcome to my website');
 
 var favouriteCountry= prompt('what is your favourite Country between Austria, France or Japan?');
@@ -17,14 +16,6 @@ while (favouriteCountry !== 'Austria' && favouriteCountry !== 'France'&& favouri
   favouriteCountry = prompt('Please only answer with between Austria, France or Japan');
 }
 
-=======
-var userName ='Rahaf'; 
-
-alert('Hello '+ userName);
-
-var favouriteCountry= prompt('what is your favourite Country between Austria, France or Japan?');
-
->>>>>>> 816b287408e91b72d4673bdfc3f10b13721fe70d
 
 if(favouriteCountry=='Austria'){
   document.write('<img src="https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" width="500px">');
@@ -36,7 +27,7 @@ else{
   document.write('<h3> please only write Austria, France or Japan next time</h3>');
 }
 
-<<<<<<< HEAD
+
 var stars = prompt('How do you rate our Website 1-5?');
 
 if (stars > 5) {
@@ -49,6 +40,3 @@ for (var i = 0; i < stars; i++) {
 }
 
 var reasonTravel= confirm('Thank you, Enjoy!')
-=======
-var reasonTravel= confirm('Enjoy!')
->>>>>>> 816b287408e91b72d4673bdfc3f10b13721fe70d
