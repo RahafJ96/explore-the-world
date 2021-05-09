@@ -5,7 +5,90 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* ----- Header ------*/
+header {
+  height: 780px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://i.pinimg.com/originals/42/75/95/4275953c7514b80e74babe24dd61a0eb.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  }
 
+header div {
+  padding: 25px;
+}
+
+/* Title */
+.title-logo {
+  color: #fff;
+  float: left;
+  text-transform: uppercase;
+}
+
+.title-logo span,
+.title-logo--footer span {
+  margin: 0 5px;
+  color: #e5d077;
+  transition: transform 0.25s;
+}
+/* Menu right side */
+.main-nav {
+  float: right;
+}
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.main-nav__item a:link,
+.main-nav__item a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 7px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.25s;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  border-bottom: 2px solid #e39a94;
+}
+
+/* Background Image with big Text */
+.heading00 {
+  font-family: 'Shadows Into Light';
+  margin-top: 6%;
+  text-align: center;
+  color: #eeeded;
+  font-size: 550%;
+   word-spacing: 5px;
+}
+
+.heading01 {
+  font-family: 'Shadows Into Light';
+  margin-top: 0%;
+  text-align: center;
+  text-decoration: line-through;
+  color: #eeeded;
+  font-size: 650%;
+  letter-spacing: 5px
+}
+
+.heading02 {
+  margin-top: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e5d077;
+  font-size: 650%;
+}
+
+/* The Body */
 html,
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -127,7 +210,7 @@ body {
   transition: opacity 0.35s;
 }
 
-//Why .country-box
+/* Why .country-box */
 .why-box:hover {
   box-shadow: 0 0 10px 1px #e39a94;
   cursor: pointer;
@@ -177,7 +260,7 @@ body {
   transition: opacity 0.35s;
 }
 
-
+/* Destination Part */
 .destinations-box {
   width: 50%;
   overflow: hidden;
@@ -246,88 +329,8 @@ width: 50%;
 }
 
 
-/* ----- Header ------*/
-
-header {
-  height: 780px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("https://i.pinimg.com/originals/42/75/95/4275953c7514b80e74babe24dd61a0eb.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  }
-
-header div {
-  padding: 25px;
-}
-
-.title-logo {
-  color: #fff;
-  float: left;
-  text-transform: uppercase;
-}
-
-.title-logo span,
-.title-logo--footer span {
-  margin: 0 5px;
-  color: #e5d077;
-  transition: transform 0.25s;
-}
-
-.main-nav {
-  float: right;
-}
-.main-nav__list {
-  list-style: none;
-}
-
-.main-nav__item {
-  display: inline-block;
-  margin: 0 7px;
-}
-
-.main-nav__item a:link,
-.main-nav__item a:visited {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 7px 0;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.25s;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-  border-bottom: 2px solid #e39a94;
-}
 
 
-.heading00 {
-  font-family: 'Shadows Into Light';
-  margin-top: 6%;
-  text-align: center;
-  color: #eeeded;
-  font-size: 550%;
-   word-spacing: 5px;
-}
-
-.heading01 {
-  font-family: 'Shadows Into Light';
-  margin-top: 0%;
-  text-align: center;
-  text-decoration: line-through;
-  color: #eeeded;
-  font-size: 650%;
-  letter-spacing: 5px
-}
-
-.heading02 {
-  margin-top: 0%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #e5d077;
-  font-size: 650%;
-}
 
 /* Menu */
 /* Search Bar */
@@ -344,6 +347,7 @@ header div {
   height: 100vh;
   padding: 40px 0 60px 0;
 }
+
 /* footer */
 footer {
   width: 100%;
@@ -405,35 +409,9 @@ footer {
   list-style: none;
 }
 
-.contact__item {
-  display: inline-block;
-}
 
-.contact__item--email {
-  float: left;
-  margin-left: 25px;
-}
 
-.contact__item--email a:link,
-.contact__item--email a:visited {
-  text-decoration: none;
-  color: #fff;
-  margin-left: 5px;
-  transition: color 0.25s, text-decoration 0.25s;
-}
-
-.contact__item--email a:hover,
-.contact__item--email a:active {
-  color: #e39a94;
-  text-decoration: solid underline #e39a94;
-}
-
-.contact__item--phone {
-  float: right;
-  margin-right: 25px;
-}
-
-/* MovInfo popup */
+/* Travel Info popup */
 .travel-info {
   position: fixed;
   left: 0;
@@ -491,14 +469,14 @@ footer {
   overflow: hidden;
 }
 
-/* rating styles */
+/* Rating Part */
 
 .stars-container {
   position: absolute;
-  top: 5%;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
-  width: 25%;
+  width: 30%;
   text-align: center;
 }
 

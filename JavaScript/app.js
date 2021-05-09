@@ -1,3 +1,13 @@
+// 
+/* 
+1. Ask the user about his age 
+2. Keep asking until he only answers the age 16 or above 
+3. Welcome Message for the User with his age
+4. Ask how many starts do you give our website ?
+5. show how much the user rate the website based on the user input.
+*/
+
+
 let age = prompt("Hello there!\nHow old are you?")
 while(age < 16){
     age = prompt('You must be 16 or greater.');
@@ -14,7 +24,6 @@ let eiffel= `The Eiffel tower is the trademark of Paris, France. With the tower 
 
 let venice= `Venice, Italian Venezia, city, major seaport, and capital of both the provincia (province) of Venezia and the regione (region) of Veneto, northern Italy. An island city, it was once the centre of a maritime republic. It was the greatest seaport in late medieval Europe and the continent’s commercial and cultural link to Asia. Venice is unique environmentally, architecturally, and historically, and in its days as a republic the city was styled la serenissima (“the most serene” or “sublime”). It remains a major Italian port in the northern Adriatic Sea and is one of the world’s oldest tourist and cultural centres.
 Today Venice is recognized as part of the artistic and architectural patrimony of all humanity, a fitting role for a city whose thousand-year economic and political independence was sustained by its role in global trading. The situation of the city on islands has limited modern suburban spread beyond the historic centre; its framework of canals and narrow streets has prevented the intrusion of automobiles; and its unmatched wealth of fine buildings and monuments dating from the period of commercial dominance has ensured a keen and almost universal desire for sensitive conservation.`
-
 
 let tokyo= `Japan (Tokyo) is the capital of Japan and it has a population of 13 million people. Tokyo is a marvelous mix of modern living and old-fashioned manners, slick high-tech gadgets and cutesy cartoon mascots. It's terribly crowded, yet can be strangely quiet. It's home to the understated, and the wacky, and you often find them right next to each other on the sidewalk. Tokyo was originally a small fishing village named Edo, now it is modern city and hosts 51 of the Fortune Global 500 companies, the highest number of any city.
 The weather there will be cold and we should wear coat, scarfs, gloves and boots.
@@ -112,7 +121,8 @@ countryBox.forEach(box =>
 })
 
 
-// Closing the Country box info popup handler
+// Closing the movie info popup handler
+
 document.addEventListener('click', function(e){
     if(e.target.classList.contains('travel-info__close')){
         // close the popup window
