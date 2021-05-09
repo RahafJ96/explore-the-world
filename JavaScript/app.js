@@ -3,7 +3,7 @@
 3. Welcome Message to the Website
 4. if the user enter on images in search part it will ask about rating the websites */
 
-function asskingAge(){
+function askingAge(){
 
 let ageNumber = prompt("Hello there!\nHow old are you?")
 while(ageNumber < 12){
@@ -13,7 +13,7 @@ alert('You are '+ageNumber+' years old!\nWelcome To my Website, lets Explore the
 return ageNumber
 }
 
-document.write(asskingAge());
+document.write(askingAge());
 
 // Information about each place 
 let neu= `Neuschwanstein Castle  is a 19th-century historicist palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany. The palace was commissioned by King Ludwig II of Bavaria as a retreat and in honour of Richard Wagner. Ludwig chose to pay for the palace out of his personal fortune and by means of extensive borrowing, rather than Bavarian public funds. Construction began in 1869, but was never fully completed.
