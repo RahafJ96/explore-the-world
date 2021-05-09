@@ -12,6 +12,7 @@ while(ageNumber < 12){
 alert('You are '+ageNumber+' years old!\nWelcome To my Website, lets Explore the World!');
 return ageNumber
 }
+
 document.write(asskingAge());
 
 // Information about each place 
