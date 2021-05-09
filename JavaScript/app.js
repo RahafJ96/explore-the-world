@@ -1,9 +1,18 @@
-let age = prompt("Hello there!\nHow old are you?")
-while(age < 16){
-    age = prompt('You must be 16 or greater.');
+/* 1. Welcome message asking the age of the user
+2. If the User 12 or above years old he can enter the Website otherwise  
+3. Welcome Message to the Website
+4. if the user enter on images in search part it will ask about rating the websites */
+
+function asskingAge(){
+
+let ageNumber = prompt("Hello there!\nHow old are you?")
+while(ageNumber < 12){
+    ageNumber = prompt('You must be 12 or greater.');
 }
-//alert(`You are ${age} years old!`);
-alert('You are '+age+' years old!\nWelcome To my Website, lets Explore the World!');
+alert('You are '+ageNumber+' years old!\nWelcome To my Website, lets Explore the World!');
+return ageNumber
+}
+document.write(asskingAge());
 
 // Information about each place 
 let neu= `Neuschwanstein Castle  is a 19th-century historicist palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany. The palace was commissioned by King Ludwig II of Bavaria as a retreat and in honour of Richard Wagner. Ludwig chose to pay for the palace out of his personal fortune and by means of extensive borrowing, rather than Bavarian public funds. Construction began in 1869, but was never fully completed.
@@ -69,6 +78,8 @@ countryBox.forEach(box =>
         starsContainer.classList.add('stars-container');
         travelInfoClose.classList.add('travel-info__close');
         
+        
+        
         // Rating the Website
         let stars = prompt('How do rate the webiste?');
         if( stars > 5) stars = 5;
@@ -83,9 +94,9 @@ countryBox.forEach(box =>
         }
 
                
-        // Geting the movie title
+        // Geting the title
         let countryName = targetElement.nextElementSibling;
-        // showing the movie img and some info based on the movie title
+        // showing the Country img and some info based on the title
         if(countryName.textContent.toLocaleLowerCase() === 'neu'){
             travelInfoText.textContent = '';
             travelInfoText.appendChild(document.createTextNode(neu));
@@ -107,8 +118,9 @@ countryBox.forEach(box =>
 
 })
 
+var getRating=function(){
 
-// Closing the movie info popup handler
+// Closing the palce info popup handler
 document.addEventListener('click', function(e){
     if(e.target.classList.contains('travel-info__close')){
         // close the popup window
@@ -116,4 +128,5 @@ document.addEventListener('click', function(e){
         // remove all stars
         starsContainer.innerHTML = '';
     }
-});
+});}
+document.write(getRating());
