@@ -2,7 +2,6 @@ let age = prompt("Hello there!\nHow old are you?")
 while(age < 16){
     age = prompt('You must be 16 or greater.');
 }
-//alert(`You are ${age} years old!`);
 alert('You are '+age+' years old!\nWelcome To my Website, lets Explore the World!');
 
 // Information about each place 
@@ -83,9 +82,9 @@ countryBox.forEach(box =>
         }
 
                
-        // Geting the movie title
+        // Geting the title
         let countryName = targetElement.nextElementSibling;
-        // showing the movie img and some info based on the movie title
+        // showing the Country img and some info based on the title
         if(countryName.textContent.toLocaleLowerCase() === 'neu'){
             travelInfoText.textContent = '';
             travelInfoText.appendChild(document.createTextNode(neu));
@@ -108,7 +107,7 @@ countryBox.forEach(box =>
 })
 
 
-// Closing the movie info popup handler
+// Closing the palce info popup handler
 document.addEventListener('click', function(e){
     if(e.target.classList.contains('travel-info__close')){
         // close the popup window
