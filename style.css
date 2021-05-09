@@ -25,13 +25,13 @@ header div {
   float: left;
   text-transform: uppercase;
 }
-
 .title-logo span,
 .title-logo--footer span {
   margin: 0 5px;
   color: #e5d077;
   transition: transform 0.25s;
 }
+
 /* Menu right side */
 .main-nav {
   float: right;

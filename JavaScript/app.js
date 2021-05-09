@@ -79,12 +79,12 @@ countryBox.forEach(box =>
         starsContainer.classList.add('stars-container');
         travelInfoClose.classList.add('travel-info__close');
         
-        
-        
+          var getRating=function(){     
         // Rating the Website
         let stars = prompt('How do rate the webiste?');
         if( stars > 5) stars = 5;
-        else if( stars < 1) stars = 1; 
+        else if( stars < 1) 
+        stars = 1; 
 
         for(let i = 0; i < stars; i++){
             // create stars imgs
@@ -93,9 +93,11 @@ countryBox.forEach(box =>
             rateStar.setAttribute('src', 'https://uxwing.com/wp-content/themes/uxwing/download/01-user_interface/star.png');
             starsContainer.appendChild(rateStar);
         }
+        return starsContainer,rateStar
+          }
+       
 
-               
-        // Geting the title
+        // Geting the Country Name with its Information
         let countryName = targetElement.nextElementSibling;
         // showing the Country img and some info based on the title
         if(countryName.textContent.toLocaleLowerCase() === 'neu'){
@@ -114,12 +116,15 @@ countryBox.forEach(box =>
             travelInfoText.textContent = '';
             travelInfoText.appendChild(document.createTextNode(cologne_cathedral));
         }
+       
+      document.write(getRating());
 
+ 
     });
 
 })
 
-var getRating=function(){
+
 
 // Closing the palce info popup handler
 document.addEventListener('click', function(e){
@@ -129,5 +134,4 @@ document.addEventListener('click', function(e){
         // remove all stars
         starsContainer.innerHTML = '';
     }
-});}
-document.write(getRating());
+});
